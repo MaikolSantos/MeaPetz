@@ -1,0 +1,89 @@
+.btn-base-icon {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode-icon{
+    width: 18px;
+    height: 18px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.dark-mode-icon:hover{
+    filter: brightness(0.70);
+}
+
+.button-base{
+    width:15rem;
+    height:2.438rem;
+    font-size: var(--font-size5);
+    font-weight: 600;
+    border-radius:var(--radius-2);
+    transition: 0.3 ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button-base-2{
+    width:7.25rem;
+    height:2.438rem;
+}
+
+.button-brand-1{
+    color: #fff;
+    background-color:var(--color-brand-100);
+}
+
+.button-brand-1:hover{
+    background-color: var(--color-brand-200);
+}
+
+.button-brand-2{
+    color:var(--color-grey-300);
+    background-color:var(--color-grey-400);
+}
+
+.button-brand-2:hover{
+    background-color:var(--color-brand-100);
+    color: var(--color-white);
+}
+
+.icon-search {
+    animation: searchAnimate 4s linear infinite;
+}
+
+:disabled {
+    opacity: 40%;
+    cursor:default;
+    pointer-events: none;
+}
+
+.btn-icon-darkmode {
+    background-color: transparent;
+    border: none;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+@media (min-width:700px){
+    .button-base{
+    width: 26.125rem;
+    height: 2.438rem;
+    }
+}
+
+@keyframes searchAnimate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
